@@ -6,7 +6,7 @@ const app = express();
 
 
 app.use(cors({
-  origin: "https://bulk-mail-app-.vercel.app",
+  origin: "https://bulk-mail-app-77y2.vercel.app",
   methods: ["GET", "POST"],
   credentials: true
 }));
