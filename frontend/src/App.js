@@ -14,7 +14,7 @@ function App() {
       return;
     }
 
-    axios.post("http://localhost:5000/sendemail", {
+    axios.post("https://bulk-mail-app-igm3.onrender.com/send", {
       subject,
       msg,
       emails: emails.split(",")
