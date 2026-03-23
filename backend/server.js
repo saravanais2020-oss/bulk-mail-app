@@ -1,19 +1,19 @@
-const express = require('express');
-const cors = require('cors');
+const express = require("express");
+const cors = require("cors");
 const mongoose = require("mongoose");
 
 const app = express();
 
 
 app.use(cors({
-  origin: "https://bulk-mail-app-jxsh.vercel.app",
+  origin: "https://bulk-mail-app-77y2.vercel.app",
   methods: ["GET", "POST"],
   credentials: true
 }));
-app.use(express.json());
 
+app.use(express.json());
 // MongoDB connect
-mongoose.connect("mongodb+srv://saravana:123@mail.dtwutpd.mongodb.net/passkey?appName=mail")
+mongoose.connect("mongodb+srv://saravana:2301@cluster0.ek5yjsz.mongodb.net/passkey?appName=Cluster0")
 .then(()=>console.log("MongoDB Connected"))
 .catch(err=>console.log(err));
 
