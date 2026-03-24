@@ -14,7 +14,7 @@ function App() {
       return;
     }
 
-    axios.post("https://bulk-mail-app-1-66zs.onrender.com/sendmail", {
+    axios.post("https://bulk-mail-app-1-66zs.onrender.com/sendemail", {
       subject,
       msg,
       emails: emails.split(",")
