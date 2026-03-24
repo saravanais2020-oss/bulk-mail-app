@@ -13,7 +13,7 @@ app.use(cors({
 
 app.use(express.json());
 // MongoDB connect
-mongoose.connect("mongodb+srv://saravana:2301@cluster0.ek5yjsz.mongodb.net/passkey?appName=Cluster0")
+mongoose.connect("mongodb+srv://saravana:<db_password>@cluster0.ek5yjsz.mongodb.net/?appName=Cluster0")
 .then(()=>console.log("MongoDB Connected"))
 .catch(err=>console.log(err));
 
