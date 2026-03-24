@@ -17,7 +17,7 @@ function App() {
     axios.post("https://bulk-mail-app-1-66zs.onrender.com/sendemail", {
       subject,
       msg,
-      emails: emails.split(",")
+emails: emails.split(",").map(e => e.trim())
     })
     .then(() => alert("Emails Sent ✅"))
     .catch(() => alert("Error ❌"));
